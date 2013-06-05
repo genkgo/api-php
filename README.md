@@ -1,7 +1,7 @@
 api-php
 ==========
 
-A node js package to connected to the Genkgo System
+A php package to connected to the Genkgo System
 
 
 ## Using
@@ -9,9 +9,12 @@ A node js package to connected to the Genkgo System
 After installing the application you can use the Genkgo Api
 
 ```php
+<?php
 require_once "GenkgoApi.php";
+
 $api = new GenkgoApi($settings['url'],$settings['apiKey']);
 $results = $api->command('organization', 'query', array('q'=>'test'));
+
 var_dump($results);
 
 ```
