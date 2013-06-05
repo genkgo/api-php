@@ -1,0 +1,5 @@
+<?php
+$settings = array();
+$settings['url'] = 'www.dummy.com';
+$settings['apiKey'] = '{api-key}';
+?>
