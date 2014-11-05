@@ -1,5 +1,7 @@
 <?php
-require_once "../src/GenkgoApi.php";
+require_once __DIR__."/../vendor/autoload.php";
+
+use Genkgo\Api\GenkgoApi;
 
 $api = new GenkgoApi('','');
 $folder = $api->command('organization', 'create', array('objectclass' => 'organizationalUnit', 'name' => 'Test Folder'));

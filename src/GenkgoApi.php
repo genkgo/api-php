@@ -1,4 +1,6 @@
 <?php
+namespace Genkgo\Api;
+
 class GenkgoApi {
 	protected $location,$apitoken;
 	public $debug = false;
