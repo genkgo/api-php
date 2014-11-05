@@ -10,10 +10,10 @@ After installing the application you can use the Genkgo Api
 
 ```php
 <?php
-require_once "GenkgoApi.php";
+require_once __DIR__."/../vendor/autoload.php";
 
-$api = new GenkgoApi($settings['url'],$settings['apiKey']);
-$results = $api->command('organization', 'query', array('q'=>'test'));
+use Genkgo\Api\GenkgoApi;
+$api = new GenkgoApi('','');
 
 var_dump($results);
 
